@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPCE</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Simon Donth">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="one" id="home">
+        <div class="menu">
+            <a href="#home"><img src="logomenu.png" alt="Domů"></a>
+            <a href="#misto">Místo konání</a>
+            <a href="#aktivity">Aktivity</a>
+            <a href="#pravidla">Pravidla</a>
+            <a href="#tvurci">Tvůrci</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuLinks = document.querySelectorAll('.menu a');
+
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const targetId = link.getAttribute('href').substring(1);
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            const offset = targetElement.offsetTop - (window.innerHeight * 0.04); // Calculate 3% above the target
+                            window.scrollTo({ top: offset, behavior: 'smooth' });
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+        <div class="one-top"></div>
+
+        <div class="one-bottom">
+            <div class="one-left">
+                <h1>První anime festival na Univerzitě Pardubice</h1>
+                <p>Donec dapibus lectus et nibh tempus, sit amet pulvinar lectus lobortis. Pellentesque nulla tellus, molestie vitae pellentesque a, fringilla a mi. Integer bibendum quis leo eget lacinia. Phasellus semper velit urna, pretium varius tortor feugiat id. Duis tincidunt tortor eget risus pellentesque, at fringilla ipsum congue. Sed luctus iaculis ligula, mattis feugiat nulla accumsan vel. Nam ullamcorper tortor velit, id consectetur augue imperdiet a. Phasellus vel porta eros. Etiam et sapien et nisi aliquam volutpat. In hac habitasse platea dictumst.</p>
+            </div>
+
+            <div class="one-right">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="two" id="misto">
+        <div class="two-left">
+            <img src="mapy.png" alt="mapa lol">
+
+        </div>
+        <div class="two-right">
+            <h2>Místo konání</h2>
+            <p>Proin vitae turpis iaculis, commodo tellus sit amet, dapibus nulla. Duis mattis in metus quis ullamcorper. Mauris molestie laoreet orci eu vestibulum. Morbi dapibus, tortor ac euismod sollicitudin, ex neque imperdiet ipsum, at ultricies risus mi ut nulla. Praesent eget turpis ac justo porttitor iaculis. Fusce vitae eros sit amet enim tempus blandit ut sed sem. Duis at nunc vitae nulla tristique sagittis quis at nisl. Nulla mattis, elit a auctor ullamcorper, metus mi convallis felis, luctus scelerisque mauris purus sit amet lectus.</p>
+
+        </div>
+    </div>
+
+    <div class="three" id="aktivity">
+
+        <div class="three-left">
+            <h2>Obsah conu:</h2>
+            <p>Minihra<br>Artist alley a workshop<br>Cosplays<br>Fotografové</p>
+        </div>
+        <div class="three-right">
+            <h2>Dobrovolné vstupné!</h2>
+            <p>MNAUUUUUUUUU</p>
+        </div>
+
+    </div>
+
+    <div class="four" id="pravidla">
+        <div class="four-left">
+            <h2>Pravidla</h2>
+            <p>Quisque auctor erat interdum arcu ultricies, nec suscipit elit pulvinar. Nunc nulla libero, euismod eu porttitor sit amet, malesuada ut nisi. Ut hendrerit neque elementum, lacinia sem ut, interdum risus. Fusce ultrices, felis vitae luctus dapibus, risus augue varius nibh, at sagittis magna nisi non mi. Aliquam varius quam sed arcu sagittis sagittis. Maecenas a nisi sed magna sagittis vestibulum. Nulla sed blandit mauris. Suspendisse potenti. Etiam quis dui nec risus suscipit dignissim eget ac nibh. Pellentesque dictum, tortor bibendum sagittis tincidunt, quam magna rhoncus leo, et ornare nisi lacus non sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+        </div>
+        <div class="four-right">
+            <img src="lawB.jpg">
+        </div>
+    </div>
+
+    <div class="five" id="tvurci">
+
+        <div class="five-top"><h1 class="kanit-bold-italic" id="white">Tvůrci</h1></div>
+        <div class="five-bottom">
+
+            <div class="five-left">
+                <div class="five-left-left">
+
+                </div>
+                <div class="five-left-right">
+                    <h2>@wei.aviii8</h2>
+                    <p>Lllaibendlibero, vulpuit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+                </div>
+            </div>
+
+            <div class="five-right">
+                <div class="five-right-left">
+
+                </div>
+                <div class="five-right-right">
+                    <h2>@adalhide_art</h2>
+                    <p>L velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="six">
+
+        <div class="six-left">
+            <div class="six-left-left">
+
+            </div>
+            <div class="six-left-right">
+                <h2>@tteatime</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+
+        </div>
+
+        <div class="six-right">
+            <div class="six-right-left">
+
+            </div>
+            <div class="six-right-right">
+                <h2>@darzy_art</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="seven">
+
+        <div class="seven-left">
+            <div class="seven-left-left">
+
+            </div>
+            <div class="seven-left-right">
+
+            </div>
+        </div>
+
+        <div class="seven-right">
+            <div class="seven-right-left">
+
+            </div>
+            <div class="seven-right-right">
+                <h1>@feelhanami</h1>
+                <p>texttexttetxt    <a href="https://www.ha-na-mi.cz/blog/workshopy-od-ha-na-mi/">stránky workshopu zde </a>etetxttetxtte</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="eight">
+
+        <div class="eight-left">
+            <div class="eight-left-left">
+
+            </div>
+            <div class="eight-left-right">
+                <h2>@bzb_ink</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="eight-right">
+            <div class="eight-right-left">
+
+            </div>
+            <div class="eight-right-right">
+                <h2>@s1moonka</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nine">
+
+        <div class="nine-left">
+            <div class="nine-left-left">
+
+            </div>
+            <div class="nine-left-right">
+                <h2>TVURCE</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="nine-right">
+            <div class="nine-right-left">
+
+            </div>
+            <div class="nine-right-right">
+                <h2>TVURCE</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nine1">
+
+        <div class="nine1-left">
+            <div class="nine1-left-left">
+
+            </div>
+            <div class="nine1-left-right">
+                <h2>TVURCE</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="nine1-right">
+            <div class="nine1-right-left">
+
+            </div>
+            <div class="nine1-right-right">
+                <h2>TVURCE</h2>
+                <p>Lllamcorper tortor a malesuada. Nam imperdiet semper egestas. Nam faucibus, massa et bibendum tincidunt, tellus eros egestas neque, vel pharetra lorem urna eget dui. Curabitur a ante luctus orci efficitur fermentum a id lacus. Suspendisse est libero, vulputate a magna sed, hendrerit rhoncus velit. Pellentesque congue turpis sit amet eros dictum hendrerit.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="ten" id="kontakt">
+
+        <div class="ten-top"><h1 class="kanit-bold-italic" id="white">Kontakt</h1></div>
+        <div class="ten-bottom">
+            <h2>Instagram</h2>
+            <p>@upce_con</p>
+            <h2>Email</h2>
+            <p>jana.blahja@gmail.com</p>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,772 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menu a {
+    display: inline-block;
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: antiquewhite;
+}
+
+.menu a img {
+    height: 2.7em; /* Nastaví výšku obrázku na výšku textu v menu */
+    width: auto; /* Šířka se nastaví automaticky podle poměru stran obrázku */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Define scrollbar width and track color */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: antiquewhite; /* Track color */
+}
+
+/* Define scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+    background-color: #333333; /* Thumb color */
+    /* border-radius: 5px;  Rounded corners */
+}
+
+/* Define scrollbar thumb on hover color */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Thumb color on hover */
+}
+
+
+
+
+
+
+
+.container {
+    position: relative; /*nebo absolute? idk*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto; /*nvm jestli tohle nechat*/
+    display: flex;
+    flex-direction: column;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .nine1, .ten {
+    /*border: 1px solid green;*/
+    flex-grow: 1;
+    height: 400px;
+    position: relative; /*diky tomuhle potomci reagujou*/
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: darkgray;
+}
+
+
+
+.one-left {
+    flex: 1;
+}
+.one-left h1 {
+    margin: 2% 0% 0% 2%;
+}
+
+.one-left p {
+    margin: 2%;
+}
+
+
+
+.one-top {
+    flex: 1;
+    visibility: visible;
+    margin-top: calc(0% + 3%);
+    background-color: #333333;
+}
+
+.one-bottom {
+    display: flex;
+    flex: 50;
+}
+
+.one-right {
+    flex: 1;
+    background-image: url('1280.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    background-color: antiquewhite;
+}
+
+.two-left {
+    width: 50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    display: block;
+}
+
+.two-left img {
+    max-height: 100%;
+    max-width: 100%;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.two-right {
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.two-right p, .two-right h2 {
+    margin: 2% 2% 0% 2%;
+}
+
+.three {
+    overflow: auto;
+    background-color: darkgray;
+    display: flex;
+}
+
+.three h2 {
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-right {
+    flex: 1;
+}
+
+
+.four {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.four-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.four-left p, .four-left h2 {
+    margin: 2% 2% 0% 2%;
+}
+
+.four-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.four-right img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.five {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.five-top {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+#white {
+    color: antiquewhite;
+}
+
+.five-bottom {
+    display: flex;
+    flex: 3;
+    border-bottom: 2.5px solid #333333;
+    background-color: #FF0000;
+}
+
+.six, .seven, .eight, .nine, .nine1 {
+    background-color: #FF0000;
+}
+
+.five-left {
+    flex: 1;
+    overflow: hidden;
+    border-right: 2.5px solid #333333;
+}
+
+.five-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('artist1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.five-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.five-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.five-left-right h2 {
+    padding-left: 3%;
+}
+
+.five-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+    border-left: 2.5px solid #333333;
+}
+
+.five-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('artist2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.five-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.five-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.five-right-right h2 {
+    padding-left: 3%;
+}
+
+.six {
+    display: flex;
+    border-top: 2.5px solid #333333;
+    border-bottom: 2.5px solid #333333;
+}
+
+.six-left {
+    flex: 1;
+    overflow: hidden;
+    border-right: 2.5px solid #333333;
+
+}
+
+.six-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('artist3.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.six-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.six-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.six-left-right h2 {
+    padding-left: 3%;
+}
+
+.six-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+    border-left: 2.5px solid #333333;
+}
+
+.six-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('artist4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.six-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.six-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.six-right-right h2 {
+    padding-left: 3%;
+}
+
+.seven {
+    display: flex;
+    border-top: 2.5px solid #333333;
+    border-bottom: 2.5px solid #333333;
+}
+
+.seven-left {
+    flex: 1;
+    overflow: hidden;
+
+
+}
+
+.seven-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('hanami.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seven-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+    background-image: url('hanami2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seven-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.seven-left-right h2 {
+    padding-left: 3%;
+}
+
+.seven-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+
+}
+
+.seven-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seven-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.seven-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.seven-right-right h2 {
+    padding-left: 3%;
+}
+
+.eight {
+    display: flex;
+    border-top: 2.5px solid #333333;
+    border-bottom: 2.5px solid #333333;
+}
+
+.eight-left {
+    flex: 1;
+    overflow: hidden;
+    border-right: 2.5px solid #333333;
+
+}
+
+.eight-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('artist6.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eight-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.eight-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.eight-left-right h2 {
+    padding-left: 3%;
+}
+
+.eight-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+    border-left: 2.5px solid #333333;
+}
+
+.eight-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eight-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.eight-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.eight-right-right h2 {
+    padding-left: 3%;
+}
+
+.nine {
+    display: flex;
+    border-top: 2.5px solid #333333;
+    border-bottom: 2.5px solid #333333;
+}
+
+.nine-left {
+    flex: 1;
+    overflow: hidden;
+    border-right: 2.5px solid #333333;
+
+}
+
+.nine-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nine-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.nine-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.nine-left-right h2 {
+    padding-left: 3%;
+}
+
+.nine-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+    border-left: 2.5px solid #333333;
+}
+
+.nine-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nine-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.nine-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.nine-right-right h2 {
+    padding-left: 3%;
+}
+
+.nine1 {
+    display: flex;
+    border-top: 2.5px solid #333333;
+    border-bottom: 2.5px solid #333333;
+}
+
+.nine1-left {
+    flex: 1;
+    overflow: hidden;
+    border-right: 2.5px solid #333333;
+
+}
+
+.nine1-left-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nine1-left-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.nine1-left-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.nine1-left-right h2 {
+    padding-left: 3%;
+}
+
+.nine1-right {
+    flex: 1; /* Roztáhnout na celou dostupnou šířku */
+    border-left: 2.5px solid #333333;
+}
+
+.nine1-right-left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-image: url('logo500.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nine1-right-right{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.nine1-right-right p {
+    padding: 3% 3% 0% 3%;
+}
+
+.nine1-right-right h2 {
+    padding-left: 3%;
+}
+
+.ten {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ten-top {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.ten-bottom {
+    display: flex;
+    flex: 3;
+    border-bottom: 2.5px solid #333333;
+    background-color: darkgray;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.ten-bottom h2, .ten-bottom p {
+    margin: 1%; /* nastavit menší mezery nahoru a dolů */
+}
+
+
+
